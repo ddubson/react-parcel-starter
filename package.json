@@ -1,0 +1,32 @@
+{
+  "name": "react-parcel-starter",
+  "version": "1.0.0",
+  "description": "React with Parcel bundler starter kit",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddubson/react-parcel-starter.git"
+  },
+  "keywords": [
+    "starter"
+  ],
+  "author": "Dmitriy Dubson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ddubson/react-parcel-starter/issues"
+  },
+  "homepage": "https://github.com/ddubson/react-parcel-starter#readme",
+  "devDependencies": {
+    "parcel": "^1.12.3"
+  },
+  "dependencies": {
+    "@types/react": "^16.8.10",
+    "@types/react-dom": "^16.8.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
