@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,14 @@
   },
   "homepage": "https://github.com/ddubson/react-parcel-starter#readme",
   "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.5.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "enzyme-react-16-adapter-setup": "^0.1.0",
+    "jest": "^24.5.0",
     "parcel": "^1.12.3"
   },
   "dependencies": {
@@ -28,5 +37,29 @@
     "@types/react-dom": "^16.8.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ]
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "setupFiles": [
+      "enzyme-react-16-adapter-setup"
+    ],
+    "testRegex": "(/test/.*|(\\.|/)(test))\\.(test.jsx?)$",
+    "testPathIgnorePatterns": [
+      "/dist/"
+    ]
   }
 }
