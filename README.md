@@ -14,10 +14,9 @@ src/
 
 - React 16.8.x
 - Parcel 1.12.x
-- ES6
+- Typescript
 
 test/
 
-- Jest 24.x
-- Babel 7.x (env/react presets)
+- Jest 24.x (ts-jest)
 - Enzyme 3.9.x
