@@ -1,10 +1,10 @@
 import {AppRoot} from "../src/AppRoot";
 import React from "react";
-import {mount} from "enzyme";
+import { render } from "@testing-library/react"
 
 describe("AppRoot", () => {
-    it("should load", () => {
-        const wrapper = mount(<AppRoot />);
-        expect(wrapper).toBeTruthy();
+    it("should load", async () => {
+        const app = await render(<AppRoot />);
+        expect(app.getByTestId("hello").textContent).toEqual("Hello World!")
     });
 });
